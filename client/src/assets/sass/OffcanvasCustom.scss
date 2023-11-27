@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+div.offcanvas.offcanvas-end.show {
+  border: solid 3px black;
+  width: 30%;
+  background-color: #21fdeb;
+  background-image: linear-gradient(19deg, #21fdeb 0%, #2a17c0 100%);
+}
+
+input#formPlaintextEmail.form-control-plaintext {
+  color: black;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+.labell {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: xx-large;
+}
+
+.titlee {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+
+//----------------- CONTACTS -----------------
+.patterns {
+  height: 20vh;
+}
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: rgb(208, 0, 255);
+  font-size: 85px;
+  font-weight: 700;
+  stroke-width: 3;
+
+  animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: hsl(0, 0%, 0%);
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%, 0%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    div.offcanvas.offcanvas-end.show {
+        border: solid 3px black;
+        width: 80%;
+        background-color: #21fdeb;
+        background-image: linear-gradient(19deg, #21fdeb 0%, #2a17c0 100%);
+      }
+      svg text {       
+        font-size: 55px;
+      }
+        }

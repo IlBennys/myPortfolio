@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Shadows+Into+Light&display=swap");
+
+.sect-1,
+.sect-2,
+.sect-3 {
+  height: 100vh;
+}
+// ----------------- SECTION 1 -----------------
+.sect-1 {
+  background-image: url("../img/sfondo.jpg");
+  background-size: cover;
+
+  .lineas {
+    position: absolute;
+    top: 40%;
+    left: 1%;
+  }
+  .linear {
+    position: absolute;
+    top: 63%;
+    right: 15%;
+    transform: rotateX(180deg);
+  }
+
+  .div-uno {
+    max-width: 650px;
+    h1 {
+      font-size: 65px;
+      font-family: "Shadows Into Light", cursive;
+      color: #09293d;
+      font-weight: 700;
+    }
+    h4 {
+      font-family: "Josefin Sans", sans-serif;
+      color: #09293d;
+      font-weight: 700;
+      animation: lights 5s 750ms linear infinite;
+    }
+  }
+  .div-due {
+    max-width: 600px;
+    box-shadow: inset 0px -13px 20px 20px #6cbced;
+    border: 1px solid white;
+  }
+}
+// ----------------- SECTION 2 -----------------
+.sect-2 {
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  .div-principale {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 3%;
+    // DIV UNO
+    .div-uno {
+      background: rgb(70, 113, 155);
+      background: -moz-linear-gradient(
+        31deg,
+        rgba(70, 113, 155, 1) 17%,
+        rgba(2, 45, 89, 1) 84%
+      );
+      background: -webkit-linear-gradient(
+        31deg,
+        rgba(70, 113, 155, 1) 17%,
+        rgba(2, 45, 89, 1) 84%
+      );
+      background: linear-gradient(
+        31deg,
+        rgba(70, 113, 155, 1) 17%,
+        rgba(2, 45, 89, 1) 84%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#46719b",endColorstr="#022d59",GradientType=1);
+      padding: 4%;
+      width: 50%;
+      height: 103%;
+      border-right: 1px black solid;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      place-items: left;
+      .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+        position: relative;
+        top: 68px;
+        h1 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 3rem;
+          color: #ffffff;
+          background: linear-gradient(
+            to right,
+            #46719b 0,
+            #022d59 10%,
+            #46719b 20%
+          );
+          background-size: 200% auto;
+          background-position: 0;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: shine 5s infinite linear;
+          animation-fill-mode: forwards;
+          -webkit-text-size-adjust: none;
+          font-weight: 600;
+          text-decoration: none;
+          white-space: nowrap;
+        }
+      }
+      .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+        h3 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 2rem;
+        }
+      }
+      .div3 {
+        grid-area: 3 / 1 / 4 / 2;
+        position: relative;
+        bottom: 50px;
+      }
+    }
+
+    // DIV 2
+
+    .div-due {
+      background: rgb(163, 18, 207);
+      background: linear-gradient(
+        31deg,
+        rgba(163, 18, 207, 1) 17%,
+        rgba(5, 27, 89, 1) 84%
+      );
+      padding: 4%;
+      width: 50%;
+      height: 103%;
+      border-right: 1px black solid;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      place-items: left;
+      .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+        position: relative;
+        top: 68px;
+        h1 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 3rem;
+          color: #ffffff;
+          background: linear-gradient(
+            to right,
+            #A312CF 0,
+            #35187d 10%,
+            #A312CF 20%
+          );
+          background-size: 200% auto;
+          background-position: 0;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: shine 5s infinite linear;
+          animation-fill-mode: forwards;
+          -webkit-text-size-adjust: none;
+          font-weight: 600;
+          text-decoration: none;
+          white-space: nowrap;
+        }
+      }
+      .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+        h3 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 1.5rem;
+          color: lightgray;
+        }
+      }
+      .div3 {
+        grid-area: 3 / 1 / 4 / 2;
+        position: relative;
+        bottom: 50px;
+      }
+    }
+  }
+}
+
+// ----------------- SECTION 3 -----------------
+.sect-3 {
+  background-color: violet;
+}
+
+// ----------------- CHARACTER ANIMATE -----------------
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff13f7 67%,
+    #00d5ff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 68%, 28%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+
+  30% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 65%, 35%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  40% {
+    color: hsl(230, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+}
+
+// ----------------- PAG -----------------
+
+.routering {
+  position: absolute;
+  top: 80%;
+  right: 62px;
+}
+.routering2 {
+  position: absolute;
+  top: 180%;
+  right: 62px;
+}
+.routering3 {
+  position: absolute;
+  top: 280%;
+  right: 62px;
+}
+
+// ----------------- BUTTON -----------------
+.btn41-43 {
+  padding: 10px 25px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 1s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-41 {
+  border: 2px solid black;
+  z-index: 1;
+  color: black;
+  width: 60%;
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: ltr;
+  z-index: -1;
+  background: #022d59;
+  transition: all 0.3s ease;
+}
+
+.btn-41:hover {
+  color: white;
+}
+
+.btn-41:hover:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+}
+@keyframes shine {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+
+// ----------------- MEDIA SCREEN -----------------
+
+@media screen and (max-width: 1200px) {
+  .lineas,
+  .linear {
+    display: none;
+  }
+  .sect-2{
+    .div-principale{
+      .div-uno,.div-due{
+        h1 {
+          font-size: 1.8rem !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .sect-1 {
+    height: 120vh !important;
+  }
+  .sect-2 {
+    height: 200vh;
+    .div-principale {
+      display: flex !important;
+      flex-direction: column !important;
+      padding: 0;
+      .div-uno,
+      .div-due {
+        width: 100%;
+        height: 50%;
+        display: grid;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: repeat(3, 0.5fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0;
+        
+      }
+    }
+  }
+  .sect-1,
+  .sect-2,
+  .sect-3 {
+    .routering {
+      display: none;
+    }
+    .routering2 {
+      display: none;
+    }
+    .routering3 {
+      display: none;
+    }
+  }
+
+}
+

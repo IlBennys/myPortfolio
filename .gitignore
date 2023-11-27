@@ -1,0 +1,22 @@
+# Ignora i file di sistema
+.DS_Store
+
+# Ignora il file .env
+/.env
+
+# Ignora le dipendenze Node.js
+/node_modules
+
+# Ignora i file di build
+/build
+/dist
+
+# Ignora i file di configurazione
+/config
+
+# Ignora i file temporanei
+/tmp
+/temp
+
+# Ignora i file di log
+/logs
