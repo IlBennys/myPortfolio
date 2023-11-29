@@ -1,11 +1,12 @@
 import "../assets/sass/HomeCustom.scss";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import foto from "../assets/img/fotocv.png";
 import linea from "../assets/img/linea.png";
 import linear from "../assets/img/linear.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Pag from "./Pag";
 import { useEffect, useRef } from "react";
+import SendMeMsg from "./SendMeMsg";
 
 function Home() {
   const sect1Ref = useRef(null);
@@ -153,31 +154,7 @@ function Home() {
       {/* ----------------- TERZA PAGINA ----------------- */}
       <Row sm={12} lg={12} ref={sect3Ref}>
         <section className="sect-3">
-          <div className="div-principale d-flex flex-wrap flex-row align-items-center justify-content-evenly m-5">
-            <div className="div-uno m-3" style={{ maxWidth: "450px" }}>
-              <h1>WELCOME</h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-                excepturi perferendis suscipit aliquid repellendus. Saepe fugit
-                facere distinctio dolorem quia animi ex cum neque porro. Amet
-                iste porro inventore dolorem?
-              </p>
-            </div>
-            <div className="div-due m-3" style={{ maxWidth: "250px" }}>
-              <Col
-                xs={6}
-                md={4}
-                className="d-flex flex-column align-items-center"
-              >
-                <Image
-                  height={`200px`}
-                  width={`200px`}
-                  src={foto}
-                  roundedCircle
-                />
-              </Col>
-            </div>
-          </div>
+         <SendMeMsg />
           <div className="routering3">
             <Pag
               onLinkClick1={handleLinkClick1}
