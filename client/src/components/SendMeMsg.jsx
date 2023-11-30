@@ -1,6 +1,6 @@
 import "../assets/sass/SendMsgCustom.scss";
 import React, { useState } from "react";
-import { Row, Col, Form, FormGroup, Label, Input, Button } from "reactstrap";
+import { Row, Col, Form, FormGroup, Label, Input } from "reactstrap";
 import Axios from "axios";
 
 const SendMeMsg = () => {
@@ -84,12 +84,12 @@ const SendMeMsg = () => {
                 onChange={handleInputChange}
                 style={{ height: 150 }}
                 name="message"
-                placeholder="What's on your mind?"
+                placeholder="Write the message to send here"
               />
             </FormGroup>
             <a href="/">
               <button onClick={sendMessage} className="bn632-hover bn26 mt-3">
-                Button
+                SHOOT
               </button>
             </a>
           </Form>

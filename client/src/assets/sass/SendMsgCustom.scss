@@ -8,7 +8,10 @@
 
 .divForm {
   h1,
-  label {
+  label,
+  button,
+  textarea,
+  input {
     font-family: "Josefin Sans", sans-serif;
   }
   .form-control {
@@ -29,7 +32,7 @@
 }
 
 .blur {
-  animation: blur-out 3s linear infinite;
+  animation: blur-out 4s linear infinite;
 }
 @keyframes blur-out {
   0% {

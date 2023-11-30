@@ -6,6 +6,26 @@ import NavCustom from "./components/NavCustom";
 import Home from "./components/Home";
 
 function App() {
+  console.log(` ._       __          ____
+  ;  \`\\--,-' /\`)    _.-'    \`-._
+   \\_/    ' | /\`--,'            \`-.     .--....____
+    /                              \`._.'           \`---...
+    |-.   _      ;    MEOWWW.             .-----..._______)
+  ,,\\q/ (q_>'_...                      .-'
+  ===/ ; _.-'~~-             /       ,'
+  \`""\`-'_,;  \`""         ___(       |
+           \\         ; /'/   \\      \\
+            \`.      //' (    ;\`\\    \`\\
+            / \\    ;     \`-  /  \`-.  /
+           (  (;   ;     (__/    /  /
+            \\,_)\\  ;           ,'  /
+    .-.          |  |           \`--'
+   ("_.)-._     (__,>
+   
+      Hey there 👋, curious!
+      You're probably wondering how cool this site is 😎.
+      Send me a message on linkedin to have a chat https://www.linkedin.com/in/benedetto-manfré 😊
+     `);
   return (
     <BrowserRouter>
       <NavCustom />
