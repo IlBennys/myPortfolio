@@ -1,3 +1,4 @@
+import "../assets/sass/SendMsgCustom.scss";
 import React, { useState } from "react";
 import { Row, Col, Form, FormGroup, Label, Input, Button } from "reactstrap";
 import Axios from "axios";
@@ -25,27 +26,24 @@ const SendMeMsg = () => {
     })
       .then((res) => {
         if (res.data.success) {
-          console.log("Email has been sent");
-          setSuccessMessage("Email has been sent successfully.");
+          setSuccessMessage(
+            "Email has been sent successfully. Look in your spam inbox email!"
+          );
           setNewMessage(initialInputState);
         } else {
-          console.log("FAILURE");
           setErrorMessage("Failed to send email. Please try again.");
         }
       })
       .catch((error) => {
-        console.error("Error sending email:", error);
-        setErrorMessage(
-          "An error occurred while sending the email. Please try again."
-        );
+        setErrorMessage("All fields are required. Please try again.");
       });
   };
 
   return (
-    <div>
+    <div className="divForm">
       <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center mt-4">
-          <h2>Send a Message</h2>
+          <h1 className="blur text-white">Send Me a Message</h1>
         </Col>
       </Row>
       <Row className="mt-4">
@@ -54,7 +52,9 @@ const SendMeMsg = () => {
           {errorMessage && <p className="text-danger">{errorMessage}</p>}
           <Form>
             <FormGroup>
-              <Label for="name">Name</Label>
+              <Label className="text-white" for="name">
+                Full Name
+              </Label>
               <Input
                 name="name"
                 onChange={handleInputChange}
@@ -63,7 +63,9 @@ const SendMeMsg = () => {
               />
             </FormGroup>
             <FormGroup>
-              <Label for="email">Email</Label>
+              <Label className="text-white" for="email">
+                Email
+              </Label>
               <Input
                 type="email"
                 name="email"
@@ -73,7 +75,9 @@ const SendMeMsg = () => {
               />
             </FormGroup>
             <FormGroup>
-              <Label for="message">Message</Label>
+              <Label className="text-white" for="message">
+                Message
+              </Label>
               <Input
                 type="textarea"
                 value={message}
@@ -83,7 +87,11 @@ const SendMeMsg = () => {
                 placeholder="What's on your mind?"
               />
             </FormGroup>
-            <Button onClick={sendMessage}>Submit</Button>
+            <a href="/">
+              <button onClick={sendMessage} className="bn632-hover bn26 mt-3">
+                Button
+              </button>
+            </a>
           </Form>
         </Col>
       </Row>

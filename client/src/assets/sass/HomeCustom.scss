@@ -53,8 +53,10 @@
   .div-principale {
     width: 100%;
     height: 100%;
-    background-color: whitesmoke;
-    padding: 3%;
+    background-color: #00002c;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-inline: 2%;
     // DIV UNO
     .div-uno {
       background: rgb(70, 113, 155);
@@ -154,9 +156,9 @@
           color: #ffffff;
           background: linear-gradient(
             to right,
-            #A312CF 0,
+            #a312cf 0,
             #35187d 10%,
-            #A312CF 20%
+            #a312cf 20%
           );
           background-size: 200% auto;
           background-position: 0;
@@ -190,9 +192,13 @@
 
 // ----------------- SECTION 3 -----------------
 .sect-3 {
-  background-color: violet;
+  background: rgb(0, 224, 255);
+  background: linear-gradient(
+    31deg,
+    rgba(0, 224, 255, 1) 17%,
+    rgba(5, 27, 89, 1) 55%
+  );
 }
-
 // ----------------- CHARACTER ANIMATE -----------------
 .animate-charcter {
   text-transform: uppercase;
@@ -336,7 +342,6 @@
   }
 }
 
-
 // ----------------- MEDIA SCREEN -----------------
 
 @media screen and (max-width: 1200px) {
@@ -344,9 +349,10 @@
   .linear {
     display: none;
   }
-  .sect-2{
-    .div-principale{
-      .div-uno,.div-due{
+  .sect-2 {
+    .div-principale {
+      .div-uno,
+      .div-due {
         h1 {
           font-size: 1.8rem !important;
         }
@@ -374,7 +380,6 @@
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         padding: 0;
-        
       }
     }
   }
@@ -391,6 +396,4 @@
       display: none;
     }
   }
-
 }
-

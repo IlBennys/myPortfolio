@@ -40,10 +40,16 @@ app.post("/send", (req, res) => {
   const { name, message, email } = req.body;
 
   var mail = {
-    from: email,
-    to: "bennymanfre@gmail.com",
-    subject: "Feedback From The Blog",
-    html: `${message}` + "<br><br>Kindly,<br>" + `${name}`,
+    from: "bennymanfre@gmail.com",
+    to: email,
+    subject: "Feedback From The Benny's Blog",
+    html:
+      `<h2>Gentile ${name},</h2>` +
+      "<br><h4>Il tuo messaggio: </h4>" +
+      `<h4>"${message}"</h4>` +
+      "<br><h4> E' stato inviato correttamente a Manfrè Benedetto!</h4>" +
+      "<br><h4> Sarai ricontattato al più presto da questa email o dall'email benedettomanfre99@gmail.com</h4>" +
+      "<br><h4>Grazie per avermi scritto!</h4>",
   };
 
   transporter.sendMail(mail, (err, data) => {

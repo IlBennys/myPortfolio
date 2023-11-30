@@ -154,7 +154,9 @@ function Home() {
       {/* ----------------- TERZA PAGINA ----------------- */}
       <Row sm={12} lg={12} ref={sect3Ref}>
         <section className="sect-3">
-         <SendMeMsg />
+          <div className="mt-5">
+            <SendMeMsg />
+          </div>
           <div className="routering3">
             <Pag
               onLinkClick1={handleLinkClick1}
