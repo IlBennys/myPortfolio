@@ -1,7 +1,12 @@
 import "../assets/sass/SendMsgCustom.scss";
 import React, { useState } from "react";
-import { Row, Col, Form, FormGroup, Label, Input } from "reactstrap";
+import { Row, Col, Form, FormGroup, Label, Input, Button } from "reactstrap";
 import Axios from "axios";
+import { SiMinutemailer } from "react-icons/si";
+import { MdAttachEmail } from "react-icons/md";
+import { FaMessage } from "react-icons/fa6";
+import { MdDriveFileRenameOutline } from "react-icons/md";
+import { GiPlayButton } from "react-icons/gi";
 
 const SendMeMsg = () => {
   const initialInputState = { name: "", email: "", message: "" };
@@ -43,7 +48,9 @@ const SendMeMsg = () => {
     <div className="divForm">
       <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center mt-4">
-          <h1 className="blur text-white">Send Me a Message</h1>
+          <h1 className="blur text-white">
+            Send Me a Message <SiMinutemailer />
+          </h1>
         </Col>
       </Row>
       <Row className="mt-4">
@@ -54,6 +61,9 @@ const SendMeMsg = () => {
             <FormGroup>
               <Label className="text-white" for="name">
                 Full Name
+                <span className="ms-2 fs-4">
+                  <MdDriveFileRenameOutline />
+                </span>
               </Label>
               <Input
                 name="name"
@@ -65,6 +75,9 @@ const SendMeMsg = () => {
             <FormGroup>
               <Label className="text-white" for="email">
                 Email
+                <span className="ms-2 fs-4">
+                  <MdAttachEmail />
+                </span>
               </Label>
               <Input
                 type="email"
@@ -77,6 +90,9 @@ const SendMeMsg = () => {
             <FormGroup>
               <Label className="text-white" for="message">
                 Message
+                <span className="ms-2 fs-4">
+                  <FaMessage />
+                </span>
               </Label>
               <Input
                 type="textarea"
@@ -87,11 +103,12 @@ const SendMeMsg = () => {
                 placeholder="Write the message to send here"
               />
             </FormGroup>
-            <a href="/">
-              <button onClick={sendMessage} className="bn632-hover bn26 mt-3">
-                SHOOT
-              </button>
-            </a>
+            <Button onClick={sendMessage} className="bn632-hover bn26 mt-3">
+              SHOOT
+              <span className="ms-2 fs-4">
+                <GiPlayButton />
+              </span>
+            </Button>
           </Form>
         </Col>
       </Row>

@@ -89,7 +89,7 @@ function Home() {
             <div className="div-uno parent">
               <div className="div1 m-5">
                 <h1>
-                  I SHOW YOU <br /> ALL MY PROJECTS
+                  CHECK <br /> ALL MY PROJECTS
                 </h1>
               </div>
               <div className="div2 m-5">
@@ -119,7 +119,7 @@ function Home() {
             <div className="div-due parent">
               <div className="div1 m-5">
                 <h1>
-                  I SHOW YOU <br /> ALL MY SKILLS
+                  CHECK <br /> ALL MY SKILLS
                 </h1>
               </div>
               <div className="div2 m-5">
@@ -154,7 +154,7 @@ function Home() {
       {/* ----------------- TERZA PAGINA ----------------- */}
       <Row sm={12} lg={12} ref={sect3Ref}>
         <section className="sect-3">
-          <div className="mt-5">
+          <div className="mt-4">
             <SendMeMsg />
           </div>
           <div className="routering3">

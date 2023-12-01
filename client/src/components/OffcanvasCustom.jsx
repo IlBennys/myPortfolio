@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { RiMapPinUserFill } from "react-icons/ri";
 import { TfiEmail } from "react-icons/tfi";
-import { FaPhone, FaLinkedin } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
 function OffcanvasCustom() {
@@ -75,28 +75,6 @@ function OffcanvasCustom() {
                     defaultValue="benedettomanfre99@gmail.com"
                   />
                 </a>
-              </Col>
-            </Form.Group>
-          </Form>
-          <hr className="text-white" />
-          {/* -- phone number -- */}
-          <Form className="mb-4">
-            <Form.Group
-              as={Row}
-              className="mb-3"
-              controlId="formPlaintextEmail"
-            >
-              <Form.Label column sm="4 text-black fw-bold labell">
-                <div className="d-flex align-items-center ">
-                  <FaPhone />
-                </div>
-              </Form.Label>
-              <Col sm="6">
-                <Form.Control
-                  plaintext
-                  readOnly
-                  defaultValue="+39 3334866172"
-                />
               </Col>
             </Form.Group>
           </Form>
