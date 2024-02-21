@@ -39,7 +39,7 @@ transporter.verify((err, success) => {
 app.post("/send", (req, res) => {
   const { name, message, email } = req.body;
 
-  var mail = {
+  let mail = {
     from: "bennymanfre@gmail.com",
     to: email,
     subject: "Feedback From The Benny's Blog",
